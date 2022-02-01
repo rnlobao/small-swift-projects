@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionWithFunctions: UICollectionView!
     @IBOutlet weak var nameInCard: UILabel! {
         didSet {
-            nameInCard.text = "@rncodes"
+            nameInCard.text = "Robson"
         }
     }
     @IBOutlet weak var moneyView: UIView! {
@@ -58,6 +58,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.setupCell(functionLabelInput: "Pagar um \nboleto", iconImageInput: UIImage(named: "barCode")!)
         }
         if indexPath.row == 2 {
+            cell.setupCell(functionLabelInput: "Fazer um \ndepósito", iconImageInput: UIImage(named: "moneyAndArrow")!)
+        }
+        if indexPath.row == 3 {
             cell.setupCell(functionLabelInput: "Fazer um \ndepósito", iconImageInput: UIImage(named: "moneyAndArrow")!)
         }
         return cell
