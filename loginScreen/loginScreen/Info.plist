@@ -4,11 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SF-Pro-Rounded-Bold.otf</string>
-		<string>SF-Pro-Rounded-Black.otf</string>
+		<string>SF-Pro-Rounded-SemiBold</string>
+		<string>SF-Pro-Rounded-Regular</string>
 	</array>
-	<key>CFBundleIdentifier</key>
-	<string></string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
