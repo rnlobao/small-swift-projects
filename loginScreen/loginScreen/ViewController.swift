@@ -17,24 +17,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstTextField: UITextField! {
         didSet {
-            firstTextField.layer.cornerRadius = 8.2
-            firstTextField.leftViewMode = UITextField.ViewMode.always
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 16.37, height: 16.37))
-            let image = UIImage(named: "mess")
-            imageView.image = image
-            firstTextField.leftView = imageView
+            firstTextField.layer.cornerRadius = 15
         }
     }
     
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.layer.cornerRadius = 24
+        }
+    }
     
     @IBOutlet weak var secondTextField: UITextField! {
         didSet {
-            secondTextField.layer.cornerRadius = 8.2
-            secondTextField.leftViewMode = UITextField.ViewMode.always
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 16.37, height: 16.37))
-            let image = UIImage(named: "p")
-            imageView.image = image
-            secondTextField.leftView = imageView
+            secondTextField.layer.cornerRadius = 15
         }
     }
 }
